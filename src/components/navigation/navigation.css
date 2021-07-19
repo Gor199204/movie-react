@@ -1,0 +1,17 @@
+div ul{
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+}
+div ul li{
+    list-style: none;
+    padding-left: 30px;
+}
+div ul li a{ 
+    text-decoration: none;
+    color: black;
+}
+
+div ul li a:hover{
+    color: rgb(148, 225, 255);
+}
