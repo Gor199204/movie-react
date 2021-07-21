@@ -1,0 +1,23 @@
+.popular_cont{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 32.5px;
+}
+
+.popular_img img{
+    width: 450px;
+
+}
+
+.popular_decription h2{
+    text-decoration: none;
+    color: black;
+}
+
+.popular a{
+    text-decoration: none;
+    color: black;
+}

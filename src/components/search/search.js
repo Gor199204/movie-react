@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import { Link } from 'react-router-dom'
 import "./search.css"
 import Api from "../../services/dataService";
+import { IMG_URL } from '../../config/url';
+
 
 class Search extends Component {
     constructor(props){
@@ -54,13 +56,18 @@ class Search extends Component {
                         <input type="text" placeholder="Serach a film..." value={value} onChange={this.inputSearchValue}/>
                         <button onClick={this.getMovies}>Search</button>
                     </div>
+                    <div className="context">
                     {this.state.movies.map(movie => (
                         <div key={movie.id}>
                             <Link to={`/movie/${movie.id}`}>
+                            <img src={`${IMG_URL + movie.backdrop_path}`} alt={movie.title} />
+
                                 <h2>{movie.title}</h2>
+
                             </Link>
                         </div>
                     ))}
+                    </div>
                 </div>
             </>
         )

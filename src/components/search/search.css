@@ -27,3 +27,23 @@
     border: 0;
     cursor: pointer;
 }
+
+.context{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.context div img{
+    width: 450px;
+}
+
+.context div h2{
+    text-decoration: none;
+    color: black;
+}
+.context div a{
+    text-decoration: none;
+    color: black;
+}
